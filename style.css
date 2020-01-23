@@ -1,0 +1,92 @@
+* {
+    margin: 0 0;
+    padding: 0 0;
+    box-sizing: border-box;
+}
+
+form[name="f1"] {
+    display: flex;
+    height: 50px;
+    width: 95%;
+    margin: 10px auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+form[name="f1"]>input {
+    height: 35px;
+    width: 45%;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+#nav{
+    height: 35px;
+    text-align: center;
+    margin: 20px 20px;
+}
+#nav>input[type="button"]{
+    height: 100%;
+    width: 35%;
+    margin: 0 15px;
+    font-size: 30px;
+}
+
+#minBox {
+    width: 300px;
+    height: 580px;
+    text-align: center;
+    margin: 10px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#minBox>h2 {
+    height: 55px;
+}
+
+#minBox>input {
+    width: 95%;
+    height: 30px;
+}
+
+#more {
+    position: fixed;
+    top: 45px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 90%;
+    height: 600px;
+    background: whitesmoke;
+    border-radius: 10px;
+    display: none;
+    border: 1px solid #000;
+}
+
+#more>h1,
+#more>h5,
+#more>p {
+    padding: 8px;
+}
+#more>#close{
+    position: absolute;
+    background-color: red;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    transition: transform 0.4s;
+}
+#more>#close:hover{
+    transform: scale(1.2);
+    border: double;
+}
